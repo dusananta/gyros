@@ -1,0 +1,535 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*******PRELOADER*******/
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0d;
+  background-image: url("https://media.giphy.com/media/EhTIih4rcMoSI/giphy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 99999;
+}
+.blackOpacityWrap {
+  background-color: #0d0d0dd0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*WRAP BACK*/
+
+#wrap {
+  background-image: url("img/bacground.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100%;
+  min-width: 100%;
+  z-index: 0;
+  position: relative;
+}
+.container {
+  width: auto;
+  margin: 0 80px;
+  z-index: 20;
+  position: relative;
+}
+
+/*NAVBAR*/
+
+.navbarWraper {
+  width: 100%;
+  background-color: #0d0d0dc5;
+  display: flex;
+  padding: 10px 0 10px 0;
+  z-index: 50;
+  position: fixed;
+}
+.mobileMenu {
+  width: 50px;
+}
+.navbarItem {
+  margin-left: auto;
+  position: relative;
+}
+#mobileUlItem {
+  display: flex;
+  list-style: none;
+  padding-top: 20px;
+}
+.mobileUlItem {
+  display: block;
+}
+.ulItem a {
+  text-decoration: none;
+  padding: 26.5px 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #a6a6a6;
+  transition: 0.5s;
+}
+.logo {
+  margin-left: 0;
+}
+.ulItem a:hover {
+  color: #f27405;
+  transition: 0.5s;
+}
+.subMenu {
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  margin-top: 30px;
+  display: none;
+}
+.subMenu ul {
+  list-style: none;
+  color: #a6a6a6;
+  text-align: left;
+}
+.subMenu ul li {
+  padding: 10px 0;
+  border: 1px solid white;
+}
+.subMenu a {
+  text-decoration: none;
+  color: #a6a6a6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+}
+.subNav {
+  float: left;
+}
+.subNavContent {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  padding-top: 35px;
+  display: none;
+}
+.subNavContent a {
+  display: inherit;
+  padding: 15px 0 15px 35px;
+  background-color: #0d0d0d84;
+}
+.subNav:hover .subNavContent {
+  display: block;
+}
+/*SLIDE IMG*/
+
+.slideImage {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+.blackOpacity {
+  background-color: #0d0d0d6b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.img img {
+  /*
+  width: 100%;
+  height: 100%;
+  background-image: url("img/22682_How-To-Blur-Background-On-iPhone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  */
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+}
+.mobileMenu {
+  display: none;
+}
+/*CONTAINER GYROS KRALJEVSKI*/
+
+.containerMenu {
+  font-size: 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-style: inherit;
+  color: #f27405;
+  z-index: 30;
+  position: relative;
+  padding-top: 50px;
+}
+.containerGyros {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-style: inherit;
+  color: #f27405;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+/*ROW-COL4*/
+
+.content {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  overflow: hidden;
+}
+.row {
+  flex-basis: 25%;
+  margin: auto;
+  overflow: hidden;
+}
+.row h1 {
+  color: #f27405;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 30;
+  position: relative;
+}
+.row p {
+  color: #a6a6a6;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.col-4 {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+.col-4 img {
+  transition: 1s;
+  height: 450px;
+}
+.col-4 img:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+.col-4 h1 {
+  color: #a6a6a6;
+}
+.price {
+  position: absolute;
+  top: -87px;
+  background: #f27405;
+  width: 150px;
+  height: 70px;
+  z-index: 10;
+  color: #a6a6a6;
+}
+.price span {
+  color: #a6a6a6;
+}
+.small {
+  top: -560px;
+  width: 148px;
+}
+
+/**********GYROS BOX********/
+
+.gyrosBoxImg {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+.gyrosBoxBack {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.gyrosBoxTxt h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 2;
+}
+.gyrosBoxContent {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+}
+.gyrosBoxContent img {
+  width: 70%;
+  height: 400px;
+  z-index: 2;
+  margin-left: -10px;
+}
+.gyrosBoxTxt {
+  width: 100%;
+  z-index: 2;
+  padding-top: 200px;
+}
+.gyrosBoxTxt span {
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 2;
+  margin-left: 300px;
+}
+/***********COL-6*********/
+.col-6 {
+  width: 100%;
+  background-color: #0d0d0d71;
+  flex-basis: 40%;
+  margin: auto;
+}
+.col-6 img {
+  width: 300px;
+  height: 400px;
+  margin-left: 15vh;
+}
+.iceCream h1 {
+  font-size: 6rem;
+  color: #f27405;
+  font-weight: 800;
+  line-height: 500px;
+}
+.iceCream {
+  display: flex;
+}
+/*********FOOTER********/
+footer {
+  width: 100%;
+  background-color: #0d0d0dc5;
+}
+.contactUs {
+  display: flex;
+  width: 100%;
+  padding: 40px 0;
+}
+footer img {
+  width: 200px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
+}
+.footerPonuda {
+  margin: auto;
+}
+.footerPonuda h1 {
+  color: #f27405;
+  font-size: 1.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 20px;
+}
+.footerPonuda li {
+  list-style: none;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #a6a6a6;
+}
+.footerPonuda a {
+  text-decoration: none;
+  color: #a6a6a6;
+}
+.footerPonuda i {
+  color: #f27405;
+}
+.fa-map-marker-alt,
+.fa-mobile-alt {
+  margin-left: 3px;
+}
+.footerPonuda a:hover {
+  color: #f27405;
+}
+footer .row p {
+  margin-bottom: 10px;
+}
+.folowUs {
+  display: flex;
+}
+.folowUs i {
+  font-size: 2.2rem;
+  color: #a6a6a6;
+  margin-right: 25px;
+}
+.folowUs i:hover {
+  color: #f27405;
+}
+.folowUsh1 {
+  margin-top: -70px;
+}
+@media (max-width: 750px) {
+  /******* SlIDE IMAGE MOBILE*********/
+  .img {
+    height: 460px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+  }
+  .slideImage {
+    height: 460px;
+  }
+  .blackOpacity {
+    height: 460px;
+    width: 100%;
+    position: absolute;
+  }
+  /*********COL-4 MOBILE*******/
+  .content {
+    display: block;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  .containerMenu {
+    margin-bottom: 50px;
+  }
+  .col-4 {
+    margin: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .col-4 img {
+    width: 100%;
+    height: 100%;
+  }
+  .row p {
+    margin-bottom: 40px;
+  }
+  .small {
+    top: -405px;
+    margin-left: auto;
+  }
+  .containerGyros {
+    padding: 0;
+  }
+  /******NAVBAR MOBILE********/
+  .navbarItem {
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    right: 0;
+    text-align: center;
+  }
+  .ulItem {
+    background: #0d0d0d;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(255, 228, 196, 0.267);
+  }
+  #mobileUlItem {
+    display: none;
+  }
+  .ulItem li {
+    width: 100%;
+    height: 10px;
+    padding-bottom: 30px;
+  }
+  .ulItem a {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+  .subNavContent a {
+    padding-top: 20px;
+  }
+  .subNav {
+    width: 100%;
+    height: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .logo {
+    width: 100%;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  /***********GYROS BOX MOBILE************/
+  .gyrosBoxImg {
+    height: 350px;
+    margin-bottom: 40px;
+  }
+  .gyrosBoxBack h1 {
+    font-size: 1.2rem;
+  }
+  .gyrosBoxContent img {
+    width: 200px;
+    height: 250px;
+    right: 0;
+    left: 0;
+    position: relative;
+    margin-left: -35px;
+  }
+  .gyrosBoxTxt h1 {
+    width: 100%;
+    margin-left: -70px;
+  }
+  .gyrosBoxTxt span {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  /**********FOOTER MOBILE*******/
+  .col-6 img {
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    margin: 0;
+  }
+  .col-6 {
+    width: 100%;
+    margin: 0;
+    flex-basis: 0;
+    overflow: hidden;
+  }
+  footer {
+    overflow: hidden;
+  }
+  .iceCream h1 {
+    line-height: 50px;
+    text-align: center;
+  }
+  .contactUs {
+    display: block;
+    text-align: center;
+  }
+  .folowUsh1 {
+    margin-top: 10px;
+  }
+  .folowUs li {
+    margin: 0 auto;
+  }
+  .footerPonuda h1 {
+    margin-bottom: 5px;
+  }
+}
